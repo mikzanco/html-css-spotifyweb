@@ -1,0 +1,98 @@
+/*******************/
+/***** GENERAL *****/
+/******************/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.debug{
+  background-color: rgba(0, 0, 255, 0.25);
+  min-height: 50px;
+  border: 1px solid black;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+/******************/
+/***** HEADER *****/
+/******************/
+
+
+header{
+  background-color: rgba(8, 11, 18, 0.9);
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button{
+  width: 215px;
+  height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+  background-color: none;
+  border: 1px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+header .button a{
+  text-decoration: none;
+  color: white;
+}
+
+/*******************/
+/***** SIDENAV *****/
+/******************/
+
+.sidenav {
+  height: 100%;
+  width: 230px;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+/*******************/
+/***** MAIN *****/
+/******************/
+
+main{
+  margin-left: 230px;
+  margin-top: 90px;
+}
+
+/*******************/
+/***** FOOTER *****/
+/******************/
+
+footer{
+  background-color: red;
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  
+}
+
+
