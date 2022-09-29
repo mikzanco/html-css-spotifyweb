@@ -221,6 +221,11 @@ main .box{
 
 main .box .text h2{
   color: white;
+  font-size: 1.5rem;
+}
+
+main .box .text p{
+  margin: 10px 0
 }
 
 .row{
@@ -229,6 +234,7 @@ main .box .text h2{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  
 }
 
 main .row .title{
@@ -236,19 +242,30 @@ main .row .title{
   text-align: center;
 }
 
+main .row .title h4{
+  color: white;
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+
 .card{
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  
   margin-right: 20px;
+  max-width: calc(100% / 7);
+  flex-wrap: wrap;
 }
 
-main .row .card .img{
+main .row .card img{
+  min-width: 200px;
   max-width: 100%;
-  height: auro;
+  height: auto;
 }
 
+main .row .popular-artist img{
+  border-radius: 50%;
+}
 
 /******************/
 /***** FOOTER *****/
@@ -285,7 +302,8 @@ footer .footer-left i{
 
 footer .footer-left img{
   aspect-ratio: 1/1;
-  width: 4vw;
+  width: 60px;
+  margin: auto 7px;
 }
 
 footer .footer-middle{
