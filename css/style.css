@@ -43,7 +43,13 @@
 .cursor{
   cursor: pointer;
 }
-/******************/
+
+li{
+  font-size: 0.8rem;
+  list-style: none;
+}
+
+/*****************/
 /***** HEADER *****/
 /******************/
 
@@ -98,10 +104,12 @@ header .button a{
   padding: 10px 50px 20px 10px;
 }
 
+.container .sidenav .under-600{
+  display: none;
+}
+
 .container .sidenav .ul-nav ul li{
   padding: 10px 0 5px 10px;
-  font-size: 0.8rem;
-  list-style: none;
 }
 
 .container .sidenav .ul-nav ul li i {
@@ -173,14 +181,29 @@ main{
   width: calc(100vw - 230px);
   top: 0;
   overflow: scroll;
-  /* margin-left: 230px; */
-  
+  color: lightgray;
+  background-color: rgb(20, 25, 34);
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-main div{
+main .main-container{
+  justify-content: space-around;
   margin-top: 90px;
+}
+
+main nav ul li{
+  padding: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+main nav ul li:hover{
+  color: white;
+}
+
+main nav ul li:active{
+  border-bottom: 2px solid greenyellow;
 }
 
 /******************/
@@ -189,7 +212,7 @@ main div{
 
 footer{
   z-index: 999;
-  background-color: blue;
+  background-color: black;
   height: 90px;
   left: 0;
   bottom: 0;
@@ -201,13 +224,14 @@ footer{
 footer .footer-left{
   margin-left: 10px;
   height: 50px;
-  width: 220px;
+  width: 15vw;
   justify-content: space-around;
   align-items: center;
 }
 
 footer .footer-left a{
   text-decoration: none;
+  
   color: white;
 }
 
@@ -216,8 +240,23 @@ footer .footer-left i{
 }
 
 footer .footer-left img{
+  aspect-ratio: 1/1;
+  width: 4vw;
+}
+
+footer .foote-right{
+  margin-right: 10px;
   height: 50px;
-  width: 50px;
+  width: 15vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .foote-right .line{
+  border: 2px solid black;
+  width: 30%;
+  height: 2px;
+
 }
 
 
@@ -228,17 +267,47 @@ footer .footer-left img{
 @media screen and (max-width:600px) {
   .sidenav{
     max-width: 70px;
+    padding: auto;
   }
 
   .sidenav .big-logo{
       display: none;
   }
 
-    .sidenav .small-logo{
-      display: block;
-    }
+ .sidenav .small-logo{
+    display: block;
+    width: 100px;
+  }
+
+  .sidenav .over-600{
+    display: none;
+  }
+
+  .sidenav .under-600{
+    color: lightgray;
+    display: block;
+  }
+
+ .sidenav .playlist{
+    display: none;
+  }
+
+ .sidenav .bottom{
+    display: none;
+  }
 
     main{
       width: calc(100vw - 70px);
     }
+}
+
+@media screen and (max-width:1200px ) {
+  footer .footer-left .icon-left{
+    flex-direction: column;
+  }
+
+  footer .footer-left .name a, span{
+    font-size: 1rem;
+  }
+  
 }
