@@ -29,10 +29,19 @@
 .container{
   height: calc(100vh - 90px);
   width: 100vw;
+  position: relative;
 }
 
 .none{
   display: none;
+}
+
+.l-gray{
+  color: lightgrey;
+}
+
+.cursor{
+  cursor: pointer;
 }
 /******************/
 /***** HEADER *****/
@@ -43,7 +52,7 @@ header{
   width: 100vw;
   left: 0;
   height: 90px;
-  background-color: rgba(255, 0, 0, 0.151);
+  background-color: rgba(0, 0, 0, 0.866);
   position: fixed;
   z-index: 2;
   /* overflow-y: scroll; */
@@ -61,8 +70,9 @@ header{
   background-color: none;
   border: 1px solid white;
   border-radius: 50px;
-  cursor: pointer;
+  
   padding: 10px;
+  margin-right: 20px;
 }
 
 header .button a{
@@ -81,7 +91,68 @@ header .button a{
   z-index: 4;
   left: 0;
   top: 0;
+  position: relative;
 }
+
+.container .sidenav .logo img{
+  padding: 10px 50px 20px 10px;
+}
+
+.container .sidenav .ul-nav ul li{
+  padding: 10px 0 5px 10px;
+  font-size: 0.8rem;
+  list-style: none;
+}
+
+.container .sidenav .ul-nav ul li i {
+  font-size: 1.2rem;
+}
+
+.container .sidenav .playlist{
+  margin-top: 20px;
+  flex-direction: column;
+  padding: 0px 0 5px 10px;
+}
+
+.container .sidenav .more{
+  margin-top: 10px;
+}
+
+.container .sidenav  .playlist span{
+  padding: 10px 0 10px 5px;
+  
+}
+
+.container .sidenav  .playlist i {
+  font-size: 2.5rem;
+}
+
+.container .sidenav .playlist:first-child{
+  color: white;
+}
+
+.container .sidenav .ul-nav ul li:hover{
+ 
+  color: white;
+}
+
+.container .sidenav .ul-nav ul li:active{
+  border-left: 2px solid greenyellow;
+}
+
+.container .sidenav .bottom{
+ bottom: 0;
+}
+
+
+
+.container .sidenav .bottom .user{
+  margin: 10px;
+  border-top: 1px solid lightgray;
+  align-items: flex-end;
+ }
+ 
+
 
 /*******************/
 /***** MAIN *****/
@@ -109,10 +180,9 @@ main div{
 /******************/
 
 footer{
-  z-index: 7;
+  z-index: 999;
   background-color: blue;
   height: 90px;
-  /* position: fixed; */
   left: 0;
   bottom: 0;
   width: 100vw;
