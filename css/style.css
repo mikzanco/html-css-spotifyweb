@@ -31,6 +31,9 @@
   width: 100vw;
 }
 
+.none{
+  display: none;
+}
 /******************/
 /***** HEADER *****/
 /******************/
@@ -97,6 +100,10 @@ main{
   overflow-x: hidden;
 }
 
+main div{
+  margin-top: 90px;
+}
+
 /******************/
 /***** FOOTER *****/
 /******************/
@@ -116,10 +123,20 @@ footer{
 /***** RESPONSIVE  *****/
 /***********************/
 
-@media screen and(max-width:600px) {
+@media screen and (max-width:600px) {
   .sidenav{
-    max-width: 50px;
+    max-width: 70px;
   }
 
-  .sidenav img
+  .sidenav .big-logo{
+      display: none;
+  }
+
+    .sidenav .small-logo{
+      display: block;
+    }
+
+    main{
+      width: calc(100vw - 70px);
+    }
 }
