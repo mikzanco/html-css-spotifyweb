@@ -12,6 +12,10 @@
   display: flex;
 }
 
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
 .debug{
   background-color: rgba(0, 0, 255, 0.25);
   min-height: 50px;
@@ -212,22 +216,11 @@ main nav ul li:active{
 
 main .box{
   margin-left: 20px;
-}
-
-main .row .text{
-  display: block;
-}
-
-.card{
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   
-  margin-left: 20px;
 }
 
-main .row .card .img{
-  
+main .box .text h2{
+  color: white;
 }
 
 .row{
@@ -237,6 +230,26 @@ main .row .card .img{
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+main .row .title{
+  display: block;
+  text-align: center;
+}
+
+.card{
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  
+  margin-right: 20px;
+}
+
+main .row .card .img{
+  max-width: 100%;
+  height: auro;
+}
+
+
 /******************/
 /***** FOOTER *****/
 /******************/
@@ -275,6 +288,23 @@ footer .footer-left img{
   width: 4vw;
 }
 
+footer .footer-middle{
+  margin-left: 10px;
+  height: 50px;
+  width: 15vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.w3-light-grey{
+  width:400px
+}
+
+.w3-grey{
+  height:20px;
+  width:30%
+}
+
 footer .foote-right{
   margin-right: 10px;
   height: 50px;
@@ -283,16 +313,6 @@ footer .foote-right{
   align-items: center;
 }
 
-footer .foote-right .w3-container{
-  width: 50%;
-}
-
-footer .foote-right .w3-grey{
-  border: 2px solid gray;
-  width: 30%;
-  height: 2px;
-
-}
 
 
 /******************************/
