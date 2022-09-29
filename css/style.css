@@ -142,12 +142,13 @@ header .button a{
 
 .container .sidenav .bottom{
  bottom: 0;
+ padding-left: 10px ;
 }
 
 
 
 .container .sidenav .bottom .user{
-  margin: 10px;
+  padding-top: 10px;
   border-top: 1px solid lightgray;
   align-items: flex-end;
  }
@@ -186,6 +187,8 @@ footer{
   left: 0;
   bottom: 0;
   width: 100vw;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
