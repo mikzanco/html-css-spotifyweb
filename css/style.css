@@ -26,6 +26,11 @@
   position: relative;
 }
 
+.container{
+  height: calc(100vh - 90px);
+  width: 100vw;
+}
+
 /******************/
 /***** HEADER *****/
 /******************/
@@ -35,7 +40,7 @@ header{
   width: 100vw;
   left: 0;
   height: 90px;
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.151);
   position: fixed;
   z-index: 2;
   /* overflow-y: scroll; */
@@ -69,7 +74,7 @@ header .button a{
 .sidenav{
   background-color: black;
   width: 230px;
-  height: 100vh;
+  height: clac(100vh - 90px);
   z-index: 4;
   left: 0;
   top: 0;
@@ -81,18 +86,18 @@ header .button a{
 
 main{
   
-  max-height: calc(100vh - 180px);
+  max-height: calc(100vh - 90px);
   right: 0;
   width: calc(100vw - 230px);
-  top: 90px;
+  top: 0;
   overflow: scroll;
   /* margin-left: 230px; */
-  margin-top: 90px;
+  
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-/*******************/
+/******************/
 /***** FOOTER *****/
 /******************/
 
@@ -100,16 +105,16 @@ footer{
   z-index: 7;
   background-color: blue;
   height: 90px;
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   bottom: 0;
   width: 100vw;
 }
 
 
-/************************/
+/***********************/
 /***** RESPONSIVE  *****/
-/**********************/
+/***********************/
 
 @media screen and(max-width:600px) {
   .sidenav{
