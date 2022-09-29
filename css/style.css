@@ -189,7 +189,11 @@ main{
 
 main .main-container{
   justify-content: space-around;
-  margin-top: 90px;
+  margin-top: 110px;
+}
+
+main nav{
+  margin-bottom: 10px;
 }
 
 main nav ul li{
@@ -206,6 +210,33 @@ main nav ul li:active{
   border-bottom: 2px solid greenyellow;
 }
 
+main .box{
+  margin-left: 20px;
+}
+
+main .row .text{
+  display: block;
+}
+
+.card{
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  
+  margin-left: 20px;
+}
+
+main .row .card .img{
+  
+}
+
+.row{
+  margin: 20px auto ;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 /******************/
 /***** FOOTER *****/
 /******************/
@@ -252,17 +283,21 @@ footer .foote-right{
   align-items: center;
 }
 
-footer .foote-right .line{
-  border: 2px solid black;
+footer .foote-right .w3-container{
+  width: 50%;
+}
+
+footer .foote-right .w3-grey{
+  border: 2px solid gray;
   width: 30%;
   height: 2px;
 
 }
 
 
-/***********************/
-/***** RESPONSIVE  *****/
-/***********************/
+/******************************/
+/***** RESPONSIVE SIDENAV *****/
+/****************************/
 
 @media screen and (max-width:600px) {
   .sidenav{
@@ -296,10 +331,15 @@ footer .foote-right .line{
     display: none;
   }
 
-    main{
-      width: calc(100vw - 70px);
-    }
+  main{
+    width: calc(100vw - 70px);
+  }
 }
+
+
+/******************************/
+/***** RESPONSIVE FOOTER*****/
+/****************************/
 
 @media screen and (max-width:1200px ) {
   footer .footer-left .icon-left{
@@ -308,6 +348,18 @@ footer .foote-right .line{
 
   footer .footer-left .name a, span{
     font-size: 1rem;
+  }
+  
+}
+
+/******************************/
+/***** RESPONSIVE MAIN*****/
+/****************************/
+
+
+@media screen and (max-width:800px){
+  main{
+    flex-wrap: wrap;
   }
   
 }
