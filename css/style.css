@@ -114,6 +114,12 @@ header .button a{
   padding: 0px 0 5px 10px;
 }
 
+.container .sidenav .playlist .ul-nav ul{
+  height: calc(100vh - 450px);
+  overflow-y: auto;
+}
+    
+
 .container .sidenav .more{
   margin-top: 10px;
 }
@@ -122,6 +128,7 @@ header .button a{
   padding: 10px 0 10px 5px;
   
 }
+
 
 .container .sidenav  .playlist i {
   font-size: 2.5rem;
@@ -189,6 +196,28 @@ footer{
   width: 100vw;
   justify-content: space-between;
   align-items: center;
+}
+
+footer .footer-left{
+  margin-left: 10px;
+  height: 50px;
+  width: 220px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .footer-left a{
+  text-decoration: none;
+  color: white;
+}
+
+footer .footer-left i{
+  padding-left: 5px;
+}
+
+footer .footer-left img{
+  height: 50px;
+  width: 50px;
 }
 
 
