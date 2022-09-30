@@ -532,7 +532,7 @@ img{
 }
 
 img:hover{
-  filter: grayscale(80%);
+  filter: contrast(40%);
 }
 
 
