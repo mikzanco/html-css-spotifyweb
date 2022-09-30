@@ -230,9 +230,6 @@ main .box .text h2{
   font-size: 1.5rem;
 }
 
-main .box .text p{
-  margin: 10px 0
-}
 
 .row{
   margin: 20px auto ;
@@ -355,7 +352,7 @@ footer .footer-middle .bar{
 }
 
 .bar-inside{
-  background-color: rgb(236, 26, 26);
+  background-color: rgb(65, 63, 63);
   height:4px;
   width:30%;
 }
@@ -457,7 +454,7 @@ footer .foote-right i{
   }
   
   footer .footer-left .name a, span{
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .w3-light-grey.big{
@@ -515,6 +512,10 @@ img:hover{
   filter: grayscale(80%);
 }
 
+.bar:hover+ .bar-inside{
+  background-color: rgb(9, 238, 21);
+
+}
 
 footer .bar:hover + .bar-g{
   display: block;
