@@ -200,6 +200,11 @@ main nav{
   margin-bottom: 10px;
 }
 
+main nav ul{
+  flex-wrap: wrap;
+  text-align: center;
+}
+
 main nav ul li{
   padding: 10px;
   align-items: center;
