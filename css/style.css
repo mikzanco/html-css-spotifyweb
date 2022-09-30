@@ -535,17 +535,42 @@ img:hover{
   filter: grayscale(80%);
 }
 
-/* .bar:hover+ .bar-inside{
+
+
+footer .footer-middle .big-bar:hover .bar-inside{
   background-color: rgb(9, 238, 21);
-
-} */
-
-.bar:hover + .bar-g {
-  display: block;
+  
 }
 
-footer .bar:hover + .bar-inside {
-  display: none;
+footer .footer-middle .big-bar:hover .bar-inside::after{
+  content: "";
+  background: rgb(9, 238, 21);
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 27px;
+  left: 600px;
+  
+}
+
+footer .footer-right .small-bar:hover .bar-inside::after{
+  content: "";
+  background: rgb(9, 238, 21);
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 40px;
+  right: 170px;
+  
+}
+
+
+footer .footer-right .small-bar:hover .bar-inside{
+  background-color: rgb(9, 238, 21);
 }
 
 footer i:hover{
