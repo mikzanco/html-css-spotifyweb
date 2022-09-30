@@ -267,10 +267,6 @@ main .row .popular-artist img{
   border-radius: 50%;
 }
 
-
-img:hover{
-
-}
 /******************/
 /***** FOOTER *****/
 /******************/
@@ -306,14 +302,18 @@ footer .footer-left i{
 
 footer .footer-left img{
   aspect-ratio: 1/1;
-  width: 60px;
+  width: 50px;
   margin: auto 7px;
+}
+
+footer .footer-left .name{
+  font-size: 0.7rem;
 }
 
 footer .footer-middle{
   margin-left: 10px;
   height: 50px;
-  width: 30vw;
+  width: 60vw;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -322,24 +322,35 @@ footer .footer-middle{
 footer .footer-middle .icon-middle{
   flex-direction: row;
   color: white;
-  padding: 0 10px;
+
+  
 }
 
 footer .footer-middle .icon-middle i{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 0 10px;
+}
+
+footer .footer-middle .icon-middle .fa-circle-play{
+  font-size: 1.5rem;
 }
 
 footer .footer-middle .bar{
   flex-direction: row;
 }
 .w3-light-grey{
-  width:300px
+  width:30vw;
+  height: 2px;
+  margin: 10px 1vw;
 }
 
 .w3-grey{
   height:2px;
-  width:30%
+  width:30%;
+}
+
+footer  .time span{
+  color: white;
 }
 
 footer .foote-right{
@@ -350,7 +361,13 @@ footer .foote-right{
   align-items: center;
 }
 
-.w3-light-grey{
+footer .foote-right i{
+ margin-right: 5px;
+}
+
+
+
+.w3-light-grey.big{
   width:150px
 }
 
@@ -399,6 +416,7 @@ footer .foote-right{
   main{
     width: calc(100vw - 70px);
   }
+
 }
 
 
@@ -411,9 +429,24 @@ footer .foote-right{
     flex-direction: column;
   }
 
-  footer .footer-left .name a, span{
-    font-size: 1rem;
+
+}
+
+@media screen and (max-width: 600px) {
+
+  footer .footer-right{
+    flex-direction: column;
+    align-items: center;
   }
+  
+  footer .footer-left .name a, span{
+    font-size: 0.5rem;
+  }
+
+  .w3-light-grey.big{
+    width:100px
+  }
+
   
 }
 
@@ -463,4 +496,14 @@ img{
 
 img:hover{
   filter: grayscale(80%);
+}
+
+
+.w3-light-grey:hover +.w3-grey{
+ color: greenyellow;
+}
+
+footer i:hover{
+  cursor: pointer;
+  color: white;
 }
