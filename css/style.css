@@ -533,6 +533,7 @@ img{
 
 img:hover{
   filter: contrast(40%);
+  /* background: rgba(0, 0, 0, 0.788); */
 }
 
 
