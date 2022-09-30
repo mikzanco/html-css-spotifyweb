@@ -202,7 +202,8 @@ main nav{
 
 main nav ul{
   flex-wrap: wrap;
-  text-align: center;
+  justify-content: center;
+  
 }
 
 main nav ul li{
@@ -345,17 +346,19 @@ footer .footer-middle .bar{
   flex-direction: row;
 }
 
-.w3-light-grey{
-  width:30vw;
-  height: 2px;
+
+.big-bar{
+  width:40vw;
+  height: 4px;
   margin: 10px 1vw;
+  background-color: lightgrey;
 }
 
-.w3-grey{
-  height:2px;
+.bar-inside{
+  background-color: rgb(236, 26, 26);
+  height:4px;
   width:30%;
 }
-
 
 
 footer  .time span{
@@ -376,15 +379,20 @@ footer .foote-right i{
 
 
 
-.w3-light-grey.big{
-  width:150px
+.small-bar{
+  width:15vw;
+  height: 4px;
+  margin: 10px 1vw;
+  background-color: lightgrey;
 }
 
-.w3-grey{
-  height:3px;
-  width:30%
-}
 
+.bar-g{
+  display: none;
+  background-color: rgb(10, 239, 56);
+  height:4px;
+  width:30%;
+}
 
 /******************************/
 /***** RESPONSIVE SIDENAV *****/
@@ -508,26 +516,14 @@ img:hover{
 }
 
 
-.w3-light-grey:hover + .w3-light-green {
- display: block;
+footer .bar:hover + .bar-g{
+  display: block;
 }
 
-.w3-light-grey:hover + .w3-grey {
+footer .bar:hover + .bar-inside{
   display: none;
- }
- 
-
-.w3-grey{
-  height:2px;
-  width:30%;
 }
 
-.w3-light-green{
-  color: lightgreen;
-  display: none;
-  height:2px;
-  width:30%;
-}
 footer i:hover{
   cursor: pointer;
   color: white;
