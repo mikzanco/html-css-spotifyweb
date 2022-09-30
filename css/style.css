@@ -399,6 +399,7 @@ footer .foote-right i{
   .sidenav{
     max-width: 70px;
     padding: auto;
+    
   }
 
   .sidenav .big-logo{
@@ -407,24 +408,41 @@ footer .foote-right i{
 
  .sidenav .small-logo{
     display: block;
-    width: 100px;
+    width: 95px;
+    margin: auto 5px;
   }
 
-  .sidenav .over-600{
+ 
+  .sidenav .over-600 li span{
+
     display: none;
   }
 
-  .sidenav .under-600{
+  .sidenav .over-600 li i{
+    font-size: 2rem;
     color: lightgray;
     display: block;
+    margin: auto 10px;
+  }
+
+  .sidenav .over-600 li i:hover{
+ 
+    color: white;
+    
   }
 
  .sidenav .playlist{
     display: none;
   }
 
- .sidenav .bottom{
+ .sidenav .bottom span{
     display: none;
+  }
+
+  .container .sidenav .bottom{
+    bottom: 75px;
+    position: fixed;
+    margin: 15px;
   }
 
   main{
@@ -457,9 +475,6 @@ footer .foote-right i{
     font-size: 0.8rem;
   }
 
-  .w3-light-grey.big{
-    width:100px
-  }
 
   
 }
@@ -482,6 +497,14 @@ footer .foote-right i{
 
 header .button:hover{
   transform: scale(1.1);
+}
+
+.playlist span:hover{
+  color: white;
+}
+
+.playlist .more i:hover{
+  color: white;
 }
 
 .img{
@@ -512,16 +535,16 @@ img:hover{
   filter: grayscale(80%);
 }
 
-.bar:hover+ .bar-inside{
+/* .bar:hover+ .bar-inside{
   background-color: rgb(9, 238, 21);
 
-}
+} */
 
-footer .bar:hover + .bar-g{
+.bar:hover + .bar-g {
   display: block;
 }
 
-footer .bar:hover + .bar-inside{
+footer .bar:hover + .bar-inside {
   display: none;
 }
 
